@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #6291C4;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.container h1 {
+  text-align: center;
+}
+
+.calculator .display {
+  background-color: #fff;
+  width: 100%;
+  height: 50px;
+  line-height: 0;
+  text-align: right;
+  padding: 40px 10px;
+  font-size: 24px;
+  border: 2px solid black;
+}
+
+.calculator .buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+}
+.calculator .buttons button {
+  background-color: #fff;
+  border: 2px solid black;
+  padding: 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.calculator .buttons button:hover {
+  background-color: #f0f0f0;
+}
+
+.calculator .buttons button:active {
+  background-color: #ccc;
+}
+
+.calculator .buttons .column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: flex-start;
+  flex: calc(75% - 10px);
+}
+
+.calculator .buttons .top-operators {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.calculator .buttons .top-operators button {
+  flex: 25%
+}
+
+.calculator .buttons .numbers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.calculator .buttons .numbers button {    
+  flex: 25%
+}
+
+.calculator .buttons .right-operators {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 25%
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 50%;
+    margin: 0 auto;    
+  }
+
+  .calculator {
+    width: 50%;
+    margin: 0 auto;
+    border: 2px solid #000;
+    
+  }
+
+  .calculator .display {
+    width: calc(100%);
+    border-bottom: 2px solid #000;
+    border-top: 1px solid #000;
+    border-left: 0;
+    border-right: 0;
+  }
+
+
+
+}
+
+  
